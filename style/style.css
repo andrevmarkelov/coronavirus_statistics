@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background: url('../img/header_background.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 1200px;
+    height: 100%;
+}
+
+.animatedPicture {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.coronaInfo {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coronaInfo > h1 {
+    font-size: 35px;
+}
+
+.coronaInfo > h2 {
+    font-size: 25px;
+}
+
+.coronaStat {
+    list-style-type: none;
+}
+
+.coronaStat > li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1232px) {
+    .header_content {
+        width: 90%;
+    }
+}
